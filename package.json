@@ -1,6 +1,6 @@
 {
   "name": "@doob9p/react-auto-scroll",
-  "version": "0.0.1",
+  "version": "0.0.6",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.es.js",
@@ -10,8 +10,16 @@
     "install:peer": "npm i --legacy-peer-deps",
     "build": "rollup -c"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "react",
+    "auto",
+    "scroll",
+    "component"
+  ],
+  "author": {
+    "name": "Brook kim",
+    "email": "doob9p@gmail.com"
+  },
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.20.5",
