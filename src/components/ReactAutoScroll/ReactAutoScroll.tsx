@@ -1,15 +1,18 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./ReactAutoScroll.css";
 import useInterval from "../../hooks/useInterval";
+import { classNames } from "../../utils/helper";
 
 interface Props {
+  className?: string;
   second: number;
   datas: any[];
-  row: (value: any) => JSX.Element;
+  row: (value: any, index: number) => JSX.Element;
   maxHeight?: number;
 }
 
 function ReactAutoScroll({
+  className = "",
   second,
   datas: _datas,
   row,
@@ -36,18 +39,16 @@ function ReactAutoScroll({
   }, second);
 
   return (
-    <div className="real-time-scheduling">
-      <div
-        id="history-container"
-        className="history"
-        ref={historyRef}
-        style={{ maxHeight }}
-      >
-        {datas &&
-          datas.map((value) => {
-            return row(value);
-          })}
-      </div>
+    <div
+      id="react-auto-scroll"
+      className={classNames("react-auto-scroll", className)}
+      ref={historyRef}
+      style={{ maxHeight }}
+    >
+      {datas &&
+        datas.map((value, index) => {
+          return row(value, index);
+        })}
     </div>
   );
 }
