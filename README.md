@@ -2,7 +2,7 @@
 
 <br>
 
-![](https://github.com/@doob9p/react-auto-scroll/introduce.gif)
+![](https://github.com/doob9p/react-auto-scroll/blob/master/public/introduce.gif)
 
 <br>
 
