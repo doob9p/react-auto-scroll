@@ -9,6 +9,7 @@ interface Props {
   datas: any[];
   row: (value: any, index: number) => JSX.Element;
   maxHeight?: number;
+  colNumber?: number;
 }
 
 function ReactAutoScroll({
@@ -17,6 +18,7 @@ function ReactAutoScroll({
   datas: _datas,
   row,
   maxHeight = 240,
+  colNumber = 1,
 }: Props) {
   const historyRef = useRef<HTMLDivElement>(null);
   const [datas, setDatas] = useState(_datas);
@@ -32,9 +34,16 @@ function ReactAutoScroll({
 
   useInterval(() => {
     setDatas((prev) => {
-      const mappedPrev = prev.filter((_, index) => index > 0);
+      if (colNumber > 1) {
+        const prevValues = prev.filter((_, index) => index > colNumber - 1);
+        const afterValues = prev.filter((_, index) => index < colNumber);
 
-      return [...mappedPrev, prev[0]];
+        return [...prevValues, ...afterValues];
+      } else {
+        const mappedPrev = prev.filter((_, index) => index > 0);
+
+        return [...mappedPrev, prev[0]];
+      }
     });
   }, second);
 

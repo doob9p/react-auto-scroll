@@ -1,6 +1,6 @@
 {
   "name": "@doob9p/react-auto-scroll",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.es.js",
