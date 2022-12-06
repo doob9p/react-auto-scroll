@@ -1,7 +1,7 @@
 {
   "name": "@doob9p/react-auto-scroll",
-  "version": "0.0.10",
-  "description": "",
+  "version": "1.0.1",
+  "description": "react auto scroll",
   "main": "./dist/index.js",
   "module": "./dist/index.es.js",
   "browser": "./dist/index.umd.js",
@@ -9,6 +9,7 @@
   "files": [
     "dist"
   ],
+  "homepage": "https://github.com/doob9p/react-auto-scroll",
   "scripts": {
     "install:peer": "npm i --legacy-peer-deps",
     "build": "rollup -c"
@@ -45,7 +46,7 @@
     "typescript": "^4.9.3"
   },
   "peerDependencies": {
-    "react": ">=16",
-    "react-dom": ">=16"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
