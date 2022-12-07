@@ -11,38 +11,38 @@ type Data = {
 const datas: Data[] = [
   {
     id: 1,
-    name: "브룩",
-    age: 20,
+    name: "김브룩",
+    age: 30,
   },
   {
     id: 2,
     name: "타마",
-    age: 20,
+    age: 30,
   },
   {
     id: 3,
     name: "징베",
-    age: 20,
+    age: 30,
   },
   {
     id: 4,
     name: "키드",
-    age: 20,
+    age: 30,
   },
   {
     id: 5,
     name: "카포네",
-    age: 20,
+    age: 30,
   },
   {
     id: 6,
     name: "라분",
-    age: 20,
+    age: 30,
   },
   {
     id: 7,
     name: "상디",
-    age: 20,
+    age: 30,
   },
 ];
 

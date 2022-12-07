@@ -14,7 +14,8 @@
     "install:peer": "npm i --legacy-peer-deps",
     "build": "rollup -c",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=a0a9cf0aab01"
   },
   "keywords": [
     "react",
@@ -65,5 +66,6 @@
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  }
+  },
+  "_id": "@doob9p/react-auto-scroll@1.0.1"
 }
